@@ -202,3 +202,40 @@ Las etiquetas de la navigation bar usan labelMedium (12 / 16, peso 500), como in
 
 
 
+### 3.4 Prototipo de alta fidelidad
+
+- **Archivo de Figma:** [T1 Menudo armario javier saravia](https://www.figma.com/design/Nrh4iQ6bEis6kerCMDAQs0/T1-Menudo-armario-javier-saravia)
+- **Versión con nombre:** «Reto 4 – alta fidelidad».
+
+#### Flujo conectado
+
+Inicio → Catálogo → Detalle → Carrito → Checkout → Confirmación → Inicio. Desde el Detalle se abre la guía de tallas como superposición sin salir de la pantalla. La navigation bar navega entre Inicio, Carrito y Favoritos desde las pantallas principales. El flujo arranca en Inicio.
+
+#### Interacciones
+
+| Disparador | Acción | Animación |
+|------------|--------|-----------|
+| Tocar una categoría en Inicio | Navegar a Catálogo | Smart Animate |
+| Tocar una tarjeta de producto | Navegar a Detalle | Smart Animate |
+| Tocar «Guía de tallas» | Abrir superposición (bottom sheet con fondo oscurecido) | Desde abajo |
+| Tocar fuera del bottom sheet | Cerrar superposición | Smart Animate |
+| Tocar «Añadir al carrito» | Navegar a Carrito | Smart Animate |
+| Tocar «Confirmar y pagar» | Navegar a Confirmación | Smart Animate |
+| Tocar la flecha de volver | Volver a la pantalla anterior | Smart Animate |
+| Tocar un destino de la navigation bar | Navegar a Inicio, Carrito o Favoritos | Smart Animate |
+
+El Carrito incluye la snackbar «Deshacer» para recuperar un producto eliminado, y el Checkout muestra un campo en estado de error con icono y texto que explica cómo corregirlo.
+
+#### Pantallas
+
+| | | |
+|---|---|---|
+| ![Inicio](capturas/prototipo/01-inicio.png) | ![Catálogo](capturas/prototipo/02-catalogo.png) | ![Detalle](capturas/prototipo/03-detalle.png) |
+| ![Guía de tallas](capturas/prototipo/03b-guia-tallas.png) | ![Carrito](capturas/prototipo/04-carrito.png) | ![Checkout con error](capturas/prototipo/05-checkout.png) |
+| ![Confirmación](capturas/prototipo/06-confirmacion.png) | ![Favoritos](capturas/prototipo/07-favoritos.png) | |
+
+**Modo oscuro** (esquema oscuro de Material Theme Builder, aplicado con el modo Dark de la colección de variables «M3»):
+
+| | |
+|---|---|
+| ![Inicio oscuro](capturas/prototipo/01-inicio-oscuro.png) | ![Detalle oscuro](capturas/prototipo/03-detalle-oscuro.png) |
