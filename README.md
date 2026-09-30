@@ -1,31 +1,64 @@
-# Documentación de la interfaz — Menudo armario
-App android de tienda de ropa y calzado infantil (0 a 14 años) **Menudo armario**. Diseño basado en Material Design 3 y pensado para comprar rápido, con una mano y sin miedo a equivocarse de talla.
+# Menudo Armario · App Android de ropa infantil
 
-## 1. Justificación del diseño
+Tarea 1 de Diseño de Interfaces de Usuario: diseño centrado en el usuario y prototipo de alta fidelidad en Figma con **Material Design 3** para una cadena de tiendas de ropa y calzado infantil de 0 a 14 años.
 
-### 1.1 Importancia del diseño centrado en el usuario
+- **Autor:** Francisco Javier Saravia Ogazón
+- **Usuario de GitHub:** [javisaravia16](https://github.com/javisaravia16)
 
-Quien compra ropa infantil casi nunca es quien la va a llevar. Compra una madre con el bebé en brazos, un padre en la cola del médico o un abuelo que no sabe qué talla usa su nieta. Si diseñamos pensando en el catálogo y no en estas personas, la app acaba siendo una web de tienda metida en un móvil: menús profundos, tallas confusas y formularios largos.
+![Captura destacada: detalle de producto con la guía de tallas](capturas/prototipo/03b-guia-tallas.png)
 
-Por eso el proyecto sigue un proceso de diseño centrado en el usuario (ISO 9241-210): primero entender quién compra y en qué contexto, después decidir la estructura, prototipar y, por último, comprobar con personas reales si funciona. Cada decisión de la interfaz de este documento se apoya en un insight de la sección 2.4 o en un resultado de las pruebas de la sección 4.
+## Enlaces
 
-### 1.2 Objetivos y metas del proyecto
+| Recurso | Enlace |
+|---------|--------|
+| Archivo de Figma | [Abrir en Figma](https://www.figma.com/design/Nrh4iQ6bEis6kerCMDAQs0/T1-Menudo-armario-javier-saravia) (compartido con la docente como «puede editar») |
+| Prototipo navegable | [Abrir prototipo](https://www.figma.com/proto/Nrh4iQ6bEis6kerCMDAQs0/T1-Menudo-armario-javier-saravia?page-id=60824%3A73&node-id=60824-658&starting-point-node-id=60824%3A658&scaling=min-zoom&content-scaling=fixed) |
+| Documentación completa | [DOCUMENTACION.md](DOCUMENTACION.md) |
+| Tokens de la guía de estilo | [diseno/estilos.json](diseno/estilos.json) |
 
-| # | Objetivo | Cómo se mide | Meta |
-| O1 | Comprar rápido | Tiempo desde Inicio hasta Confirmación en la tarea de compra | Menos de 2 minutos y al menos el 80 % de participantes lo consigue sin ayuda |
-| O2 | Acertar con la talla | Participantes que eligen la talla correcta en la tarea de regalo usando la guía de tallas | 100 % de aciertos y menos de 30 s en la guía |
-| O3 | Usable con una mano y accesible | Revisión de las 7 pantallas: áreas táctiles, posición de las acciones principales y contraste | 100 % de áreas táctiles ≥ 48 × 48 dp, acción principal siempre en la mitad inferior y todas las parejas de color ≥ 4,5:1 |
+## Índice de la documentación
 
-### 1.3 Beneficios esperados
+1. [Justificación del diseño](DOCUMENTACION.md#1-justificación-del-diseño)
+   - [1.1 Importancia del diseño centrado en el usuario](DOCUMENTACION.md#11-importancia-del-diseño-centrado-en-el-usuario)
+   - [1.2 Objetivos y metas del proyecto](DOCUMENTACION.md#12-objetivos-y-metas-del-proyecto)
+   - [1.3 Beneficios esperados](DOCUMENTACION.md#13-beneficios-esperados)
+2. [Investigación y análisis de usuarios](DOCUMENTACION.md#2-investigación-y-análisis-de-usuarios)
+   - [2.1 Datos demográficos y segmentación](DOCUMENTACION.md#21-datos-demográficos-y-segmentación)
+   - [2.2 Personas](DOCUMENTACION.md#22-personas)
+   - [2.3 Análisis de la competencia](DOCUMENTACION.md#23-análisis-de-la-competencia)
+   - [2.4 Insights y hallazgos clave](DOCUMENTACION.md#24-insights-y-hallazgos-clave)
+3. [Diseño de la interfaz](DOCUMENTACION.md#3-diseño-de-la-interfaz)
+   - [3.1 Mapa de navegación](DOCUMENTACION.md#31-mapa-de-navegación)
+   - [3.2 Wireframes](DOCUMENTACION.md#32-wireframes)
+   - [3.3 Guía de estilo Material Design 3](DOCUMENTACION.md#33-guía-de-estilo-material-design-3)
+   - [3.4 Prototipo de alta fidelidad](DOCUMENTACION.md#34-prototipo-de-alta-fidelidad)
+4. [Validación y pruebas](DOCUMENTACION.md#4-validación-y-pruebas)
+   - [4.1 Metodología](DOCUMENTACION.md#41-metodología)
+   - [4.2 Resultados](DOCUMENTACION.md#42-resultados)
+   - [4.3 Iteraciones y mejoras](DOCUMENTACION.md#43-iteraciones-y-mejoras)
+5. [Entrega y documentación final](DOCUMENTACION.md#5-entrega-y-documentación-final)
+   - [5.1 Justificación del diseño propuesto](DOCUMENTACION.md#51-justificación-del-diseño-propuesto)
+   - [5.2 Recomendaciones y pasos a seguir](DOCUMENTACION.md#52-recomendaciones-y-pasos-a-seguir)
+6. [Referencias bibliográficas](DOCUMENTACION.md#6-referencias-bibliográficas)
 
-Para quien compra
-- Encuentra lo que busca en menos pasos gracias a la entrada por edad (Bebé, Niña, Niño).
-- Menos dudas con las tallas: la guía está en el propio producto y traduce la talla a edad y altura.
-- Puede deshacer errores (eliminar del carrito, datos mal escritos) sin empezar de nuevo.
-- Puede comprar un regalo sin saber la talla exacta y cambiarlo en cualquier tienda física.
+## Estructura del repositorio
 
-Para el negocio
-- Menos devoluciones por talla equivocada, uno de los motivos de cambio más frecuentes en ropa infantil.
-- Más pedidos terminados al reducir el checkout a una sola pantalla y permitir comprar como invitado.
-- Más visitas a tienda física con la opción de recogida y cambio en tienda.
-- Una base de diseño (tokens y componentes M3) reutilizable para futuras funciones y para una versión web.
+```
+diu-t1-menudoarmario/
+├── README.md              ← esta portada
+├── DOCUMENTACION.md       ← documento principal (secciones 1 a 6)
+├── diseno/
+│   └── estilos.json       ← tokens de la guía de estilo M3
+└── capturas/
+    ├── wireframes/        ← PNG de baja fidelidad (7)
+    ├── prototipo/         ← PNG de alta fidelidad 360×800 (7 + guía de tallas + 2 en oscuro)
+    └── iteracion/         ← antes.png y despues.png
+```
+
+## Resumen del diseño
+
+- **Color semilla** `#E0694E` (coral) con esquema claro y oscuro de Material Theme Builder; todas las parejas color/on-color superan 4,5:1.
+- **Navigation bar** con tres destinos: Inicio, Carrito y Favoritos.
+- **Componentes propios:** `TarjetaProducto` (normal, favorito, agotado) y `SelectorTalla` (disponible, seleccionada, sin stock).
+- **Flujo de compra completo:** Inicio → Catálogo → Detalle → talla → Carrito → Checkout → Confirmación.
+- **Herramientas:** Figma, Material 3 Design Kit, Material Theme Builder, VS Code, Git y Zotero.
