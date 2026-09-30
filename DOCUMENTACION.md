@@ -239,3 +239,7 @@ El Carrito incluye la snackbar «Deshacer» para recuperar un producto eliminado
 | | |
 |---|---|
 | ![Inicio oscuro](capturas/prototipo/01-inicio-oscuro.png) | ![Detalle oscuro](capturas/prototipo/03-detalle-oscuro.png) |
+
+---
+
+Palabra del día: mondongo
