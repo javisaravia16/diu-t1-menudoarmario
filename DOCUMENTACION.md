@@ -135,5 +135,70 @@ Siete wireframes de baja fidelidad en escala de grises, frame Android Compact de
 | 6. Confirmación | ![Wireframe Confirmación](capturas/wireframes/06-confirmacion.png) | Mensaje claro, número de pedido y botón para volver al inicio |
 | 7. Favoritos | ![Wireframe Favoritos](capturas/wireframes/07-favoritos.png) | Cuadrícula de prendas guardadas y pie con la palabra del día |
 
+### 3.3 Guía de estilo Material Design 3
+
+Los tokens completos están en [`diseno/estilos.json`](diseno/estilos.json).
+
+#### Color
+
+- **Color semilla:** `#E0694E`, un coral cálido. Transmite cercanía y alegría sin caer en los tópicos rosa/azul, y funciona igual para niña y niño.
+- Esquema generado con **Material Theme Builder** (variante *Tonal spot*) en claro y oscuro, aplicado en Figma como estilos de color con los nombres de rol M3 (`primary`, `on-primary`, etc.).
+
+| Rol | Claro | Oscuro |
+|-----|-------|--------|
+| primary / onPrimary | `#904B3B` / `#FFFFFF` | `#FFB4A3` / `#561F12` |
+| primaryContainer / onPrimaryContainer | `#FFDAD2` / `#733426` | `#733426` / `#FFDAD2` |
+| secondary / onSecondary | `#77574F` / `#FFFFFF` | `#E7BDB4` / `#442A24` |
+| tertiary / onTertiary | `#6D5D2E` / `#FFFFFF` | `#DBC58C` / `#3C2F04` |
+| surface / onSurface | `#FFF8F6` / `#231917` | `#1A110F` / `#F1DFDB` |
+| error / onError | `#BA1A1A` / `#FFFFFF` | `#FFB4AB` / `#690005` |
+
+#### Contraste (WCAG 2.2, nivel AA: mínimo 4,5:1 para texto normal)
+
+| Pareja color / on-color | Ratio claro | Ratio oscuro | ¿Cumple AA? |
+|-------------------------|-------------|--------------|-------------|
+| primary / onPrimary | 6,45:1 | 7,69:1 | Sí |
+| primaryContainer / onPrimaryContainer | 7,21:1 | 7,21:1 | Sí |
+| secondary / onSecondary | 6,44:1 | 7,70:1 | Sí |
+| tertiary / onTertiary | 6,45:1 | 7,73:1 | Sí |
+| surface / onSurface | 16,36:1 | 14,43:1 | Sí (también AAA) |
+| error / onError | 6,46:1 | 7,72:1 | Sí |
+
+Comprobación adicional: el texto secundario (`onSurfaceVariant` `#534340` sobre `surface`) da 8,91:1 en claro y 10,94:1 en oscuro, y el enlace «Guía de tallas» en `primary` sobre `surface` da 6,15:1. Los ratios se han calculado con la fórmula de luminancia relativa de WCAG y se pueden comprobar con cualquier verificador de contraste.
+
+#### Tipografía
+
+Familia **Roboto**, escala tipográfica de M3:
+
+| Rol | Tamaño / interlineado | Peso | Uso en la app |
+|-----|----------------------|------|---------------|
+| headlineSmall | 24 / 32 | 400 | Títulos de pantalla grandes (Confirmación) |
+| titleLarge | 22 / 28 | 400 | Título de la top app bar, precio en Detalle |
+| titleMedium | 16 / 24 | 500 | Nombre del producto, títulos de sección |
+| bodyLarge | 16 / 24 | 400 | Textos de lectura, campos del formulario |
+| labelLarge | 14 / 20 | 500 | Botones, chips, enlaces («Guía de tallas», «Ver todo») |
+
+Las etiquetas de la navigation bar usan labelMedium (12 / 16, peso 500), como indica M3 para ese componente. No se usa ningún texto por debajo de 12 sp, pensando en personas como Antonio.
+
+#### Rejilla y espaciado
+
+- **4 columnas** en el frame de 360 dp, con **márgenes de 16 dp** y medianiles de 8 dp.
+- Todas las distancias son **múltiplos de 8 dp** (8, 16, 24, 32…); 4 dp solo para ajustes finos dentro de un componente.
+- **Áreas táctiles de al menos 48 × 48 dp** en botones, chips, iconos y tallas.
+- Acciones principales en la mitad inferior de la pantalla, al alcance del pulgar.
+
+#### Componentes
+
+- **Del kit M3:** top app bar, navigation bar, card, filter chip, button (filled, outlined y text), text field (outlined), snackbar y bottom sheet.
+- **Propios, con variantes y auto layout:**
+  - `TarjetaProducto` → `normal`, `favorito`, `agotado`. Foto, nombre, precio y botón de favorito; la variante agotado baja la opacidad de la foto y muestra la etiqueta «Agotado».
+  - `SelectorTalla` → `disponible`, `seleccionada`, `sin stock`. Botón de 56 × 56 dp con la talla y la edad debajo; la variante sin stock va tachada y no es pulsable.
+
+#### Accesibilidad
+
+- Nunca se transmite información solo con color: las tallas sin stock van tachadas y los errores llevan icono y texto.
+- Iconos de la navigation bar siempre con etiqueta de texto.
+- Los errores del formulario explican cómo corregirlos (p. ej., «El código postal tiene 5 números»).
+
 
 
