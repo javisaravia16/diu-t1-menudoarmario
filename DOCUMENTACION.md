@@ -83,3 +83,57 @@ Revisión de las apps Android de cuatro marcas que venden moda infantil en Espa�
 | I4 | Muchos compran regalos sin conocer la talla | Casilla «Es un regalo» en el checkout (ticket regalo sin precio) y aviso de cambio gratis en cualquier tienda física |
 | I5 | Tienen miedo a equivocarse y perder lo hecho | **Snackbar «Deshacer»** al eliminar del carrito y errores del formulario con mensaje de ayuda que dice cómo corregirlo, sin borrar lo escrito |
 | I6 | Deciden en varios ratos, no de una vez | **Favoritos** como destino de la navigation bar para guardar prendas y volver después |
+
+## 3. Diseño de la interfaz
+
+### 3.1 Mapa de navegación
+
+```mermaid
+flowchart TD
+    NB{{"Navigation bar<br/>Inicio · Carrito · Favoritos"}}
+
+    INI["Inicio<br/>categorías por edad, novedades, buscador"]
+    CAT["Catálogo<br/>cuadrícula + filter chips + ordenar"]
+    DET["Detalle de producto<br/>carrusel, SelectorTalla"]
+    GUIA(["Guía de tallas<br/>bottom sheet"])
+    CAR["Carrito<br/>cantidad, eliminar, resumen"]
+    CHK["Checkout<br/>formulario con text fields"]
+    CONF["Confirmación<br/>nº de pedido"]
+    FAV["Favoritos<br/>prendas guardadas"]
+
+    NB --> INI
+    NB --> CAR
+    NB --> FAV
+
+    INI -->|"categoría o búsqueda"| CAT
+    INI -->|"novedad"| DET
+    CAT -->|"tarjeta de producto"| DET
+    DET -->|"Guía de tallas"| GUIA
+    GUIA -->|"cerrar"| DET
+    DET -->|"elegir talla + Añadir al carrito"| CAR
+    DET -->|"corazón"| FAV
+    FAV -->|"tarjeta de producto"| DET
+    CAR -->|"Tramitar pedido"| CHK
+    CHK -->|"error: corregir campo"| CHK
+    CHK -->|"Confirmar y pagar"| CONF
+    CONF -->|"Volver al inicio"| INI
+```
+
+La app tiene dos niveles: los tres destinos principales de la navigation bar y las pantallas de detalle del flujo de compra. Catálogo no está en la navigation bar porque se llega siempre desde una categoría o una búsqueda de Inicio, que es como compran nuestras personas (I3).
+
+### 3.2 Wireframes
+
+Siete wireframes de baja fidelidad en escala de grises, frame Android Compact de 360 × 800, en la página «Wireframes» de Figma (versión «Reto 2 – wireframes»).
+
+| Pantalla | Wireframe | Qué resuelve |
+|----------|-----------|--------------|
+| 1. Inicio | ![Wireframe Inicio](capturas/wireframes/01-inicio.png) | Buscador arriba, tres categorías por edad como primer bloque y novedades en carrusel horizontal |
+| 2. Catálogo | ![Wireframe Catálogo](capturas/wireframes/02-catalogo.png) | Chips de edad/talla, color y precio fijos bajo la top app bar; cuadrícula de 2 columnas y botón de ordenar |
+| 3. Detalle | ![Wireframe Detalle](capturas/wireframes/03-detalle.png) | Carrusel de fotos, precio, selector de talla con enlace a la guía y botón «Añadir al carrito» fijo abajo |
+| 4. Carrito | ![Wireframe Carrito](capturas/wireframes/04-carrito.png) | Líneas con cantidad (− / +) y papelera, resumen del importe y botón «Tramitar pedido» abajo |
+| 5. Checkout | ![Wireframe Checkout](capturas/wireframes/05-checkout.png) | Una sola pantalla: entrega (domicilio o tienda), datos, casilla de regalo y pago |
+| 6. Confirmación | ![Wireframe Confirmación](capturas/wireframes/06-confirmacion.png) | Mensaje claro, número de pedido y botón para volver al inicio |
+| 7. Favoritos | ![Wireframe Favoritos](capturas/wireframes/07-favoritos.png) | Cuadrícula de prendas guardadas y pie con la palabra del día |
+
+
+
