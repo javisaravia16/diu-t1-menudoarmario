@@ -1,0 +1,51 @@
+{
+  "propietario": "javisaravia16",
+  "tienda": "Menudo armario",
+  "colorSemilla": "#E0694E",
+  "esquema": {
+    "claro": {
+      "primary": "#904B3B",
+      "onPrimary": "#FFFFFF",
+      "primaryContainer": "#FFDAD2",
+      "onPrimaryContainer": "#733426",
+      "secondary": "#77574F",
+      "onSecondary": "#FFFFFF",
+      "tertiary": "#6D5D2E",
+      "onTertiary": "#FFFFFF",
+      "surface": "#FFF8F6",
+      "onSurface": "#231917",
+      "error": "#BA1A1A",
+      "onError": "#FFFFFF"
+    },
+    "oscuro": {
+      "primary": "#FFB4A3",
+      "onPrimary": "#561F12",
+      "primaryContainer": "#733426",
+      "onPrimaryContainer": "#FFDAD2",
+      "secondary": "#E7BDB4",
+      "onSecondary": "#442A24",
+      "tertiary": "#DBC58C",
+      "onTertiary": "#3C2F04",
+      "surface": "#1A110F",
+      "onSurface": "#F1DFDB",
+      "error": "#FFB4AB",
+      "onError": "#690005"
+    }
+  },
+  "tipografia": {
+    "familia": "Roboto",
+    "roles": {
+      "headlineSmall": { "tamano": 24, "interlineado": 32, "peso": 400 },
+      "titleLarge":    { "tamano": 22, "interlineado": 28, "peso": 400 },
+      "titleMedium":   { "tamano": 16, "interlineado": 24, "peso": 500 },
+      "bodyLarge":     { "tamano": 16, "interlineado": 24, "peso": 400 },
+      "labelLarge":    { "tamano": 14, "interlineado": 20, "peso": 500 }
+    }
+  },
+  "espaciado": { "base": 8, "margenPantalla": 16, "columnas": 4, "areaTactilMinima": 48 },
+  "componentes": ["Top app bar", "Navigation bar", "Card", "Filter chip", "Button", "Text field", "Snackbar", "Bottom sheet"],
+  "componentesPropios": [
+    { "nombre": "TarjetaProducto", "variantes": ["normal", "favorito", "agotado"] },
+    { "nombre": "SelectorTalla",   "variantes": ["disponible", "seleccionada", "sin stock"] }
+  ]
+}
