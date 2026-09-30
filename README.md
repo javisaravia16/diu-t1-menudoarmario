@@ -52,7 +52,7 @@ diu-t1-menudoarmario/
 └── capturas/
     ├── wireframes/        ← PNG de baja fidelidad (7)
     ├── prototipo/         ← PNG de alta fidelidad 360×800 (7 + guía de tallas + 2 en oscuro)
-    └── iteracion/         ← antes.png y despues.png
+    └── iteracion/         ← reservada para el antes/después de la iteración (pruebas con usuarios pendientes)
 ```
 
 ## Resumen del diseño

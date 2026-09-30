@@ -240,6 +240,76 @@ El Carrito incluye la snackbar «Deshacer» para recuperar un producto eliminado
 |---|---|
 | ![Inicio oscuro](capturas/prototipo/01-inicio-oscuro.png) | ![Detalle oscuro](capturas/prototipo/03-detalle-oscuro.png) |
 
+## 4. Validación y pruebas
+
+### 4.1 Metodología
+
+Plan de pruebas de usabilidad diseñado para validar el prototipo:
+
+- **Participantes:** al menos dos compañeros de otro grupo de trabajo que no hayan visto el prototipo.
+- **Formato:** prueba moderada en persona con el prototipo de Figma en el móvil (app de Figma) o en el ordenador a tamaño móvil. Se pide pensar en voz alta y no se les ayuda salvo que se bloqueen más de 1 minuto.
+- **Tareas:**
+  1. **T1 · Compra:** «Compra un pijama de la talla 4 años y termina el pedido». (Mide O1).
+  2. **T2 · Regalo:** «Tu sobrina tiene 4 años y mide 102 cm. Busca un vestido, averigua con la guía qué talla le corresponde y guárdalo en favoritos». (Mide O2).
+  3. **T3 · Corregir:** «Elimina del carrito un producto, arrepiéntete y recupéralo. Después corrige el error del formulario de pago». (Mide recuperación de errores, I5).
+- **Métricas por tarea:**
+  - Éxito: completa sin ayuda (✔), completa con ayuda (◐) o no completa (✘).
+  - Tiempo en segundos, con cronómetro desde que se lee la tarea.
+  - Errores: toques en un sitio equivocado o vueltas atrás.
+  - Al final, una pregunta de facilidad del 1 (muy difícil) al 7 (muy fácil) por tarea.
+
+### 4.2 Resultados
+
+En esta entrega **las pruebas con usuarios no se han realizado todavía**, por lo que no hay resultados que presentar y no se da por cumplido ningún objetivo de medición (O1 y O2). Lo único comprobado hasta ahora es el objetivo O3 en la revisión interna: contraste de color, áreas táctiles y posición de las acciones principales (ver sección 3.3).
+
+### 4.3 Iteraciones y mejoras
+
+Al no haber pruebas, no hay una iteración basada en datos de usuarios. La revisión interna del prototipo sí ha detectado estos puntos pendientes, que se abordarían en la siguiente versión:
+
+- En el Checkout, la etiqueta y el icono «!» del campo con error deberían usar el color de error del tema en vez del color de texto.
+- Las tarjetas 2 y 3 del carrusel de Inicio conservan el texto por defecto.
+- Las pantallas en modo oscuro enlazan con las pantallas claras.
+- Seleccionar talla, marcar un favorito y eliminar con «Deshacer» se muestran en las pantallas, pero no están conectados como interacciones en el prototipo.
+
+## 5. Entrega y documentación final
+
+### 5.1 Justificación del diseño propuesto
+
+La propuesta de Menudo Armario sale de un problema concreto: gente con poco tiempo que compra desde el móvil con una mano y que duda con las tallas. Las decisiones principales responden a eso:
+
+- **Entrada por edad** en Inicio y filtros como chips visibles, porque se busca por la edad del niño y no por tipo de prenda (I3).
+- **Guía de tallas dentro del producto**, en un bottom sheet que no hace perder la pantalla, y un selector que muestra la edad de cada talla (I1). Es la decisión con más impacto previsto en devoluciones.
+- **Diseño para el pulgar**: navigation bar abajo, botones principales fijos en la parte inferior y áreas táctiles de 48 dp (I2, O3).
+- **Checkout de una sola pantalla**, sin registro obligatorio, con opción de regalo y recogida en tienda (I4, O1).
+- **Errores que se pueden deshacer**: snackbar «Deshacer» y mensajes de ayuda en el formulario (I5).
+- **Material Design 3** como base: da componentes que los usuarios de Android ya conocen, un esquema de color accesible en claro y oscuro generado a partir de un único color de marca, y tokens que el equipo de desarrollo puede trasladar directamente a Jetpack Compose.
+
+Estas decisiones se apoyan en el análisis de usuarios y de la competencia de la sección 2, pero todavía no se han contrastado con pruebas de usabilidad reales, que son el siguiente paso.
+
+### 5.2 Recomendaciones y pasos a seguir
+
+1. **Probar con usuarios**, empezando por el plan de la sección 4.1 y ampliando después al público real: al menos cinco madres o padres y dos o tres personas mayores de 60 años, que es donde más riesgo hay de letra pequeña y de iconos confusos.
+2. **Ampliar la guía de tallas** con la opción de introducir la altura del niño y que la app recomiende la talla, y guardar los perfiles de los niños (nombre, fecha de nacimiento y altura) para no repetirlo en cada compra.
+3. **Conectar con las tiendas físicas**: stock por tienda en el detalle, reserva y recogida en 2 horas y cambio de regalos sin ticket.
+4. **Revisar la accesibilidad en el móvil real**: tamaño de fuente del sistema al 200 %, TalkBack y modo oscuro.
+5. **Medir tras el lanzamiento** los mismos indicadores de los objetivos (tiempo de compra, pedidos terminados y devoluciones por talla) para decidir las siguientes iteraciones.
+
+## 6. Referencias bibliográficas
+
+Cooper, A., Reimann, R., Cronin, D., & Noessel, C. (2014). *About face: The essentials of interaction design* (4.ª ed.). Wiley.
+
+Google. (s. f.). *Material Design 3*. Recuperado el 30 de septiembre de 2026, de https://m3.material.io/
+
+Hoober, S. (2013, 18 de febrero). How do users really hold mobile devices? *UXmatters*. https://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php
+
+International Organization for Standardization. (2019). *Ergonomics of human-system interaction — Part 210: Human-centred design for interactive systems* (ISO Standard No. 9241-210:2019). https://www.iso.org/standard/77520.html
+
+Nielsen, J. (2000, 18 de marzo). *Why you only need to test with 5 users*. Nielsen Norman Group. https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
+
+Norman, D. A. (2013). *The design of everyday things* (Ed. revisada y ampliada). Basic Books.
+
+World Wide Web Consortium. (2023). *Web Content Accessibility Guidelines (WCAG) 2.2*. https://www.w3.org/TR/WCAG22/
+
 ---
 
 Palabra del día: mondongo
