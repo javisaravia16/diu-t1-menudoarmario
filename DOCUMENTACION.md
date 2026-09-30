@@ -28,4 +28,58 @@ Para el negocio
 - Menos devoluciones por talla equivocada, uno de los motivos de cambio más frecuentes en ropa infantil.
 - Más pedidos terminados al reducir el checkout a una sola pantalla y permitir comprar como invitado.
 - Más visitas a tienda física con la opción de recogida y cambio en tienda.
-- Una base de diseño (tokens y componentes M3) reutilizable para futuras funciones y para una versión web.
+- Una base de diseño (tokens y componentes M3) reutilizable para futuras funciones y para una versión web
+
+## 2. Investigación y análisis de usuarios
+
+### 2.1 Datos demográficos y segmentación
+
+La investigación es básica y parte del briefing de la cadena, de la observación de apps de la competencia y de conversaciones informales con familiares y compañeros. No son datos estadísticos, sino hipótesis de trabajo que se contrastan en las pruebas de la sección 4.
+
+| Segmento | Perfil | Qué compra | Cómo usa el móvil |
+|----------|--------|------------|-------------------|
+| Madres y padres | 28-45 años, trabajan, hijos de 0 a 14 años | Compra recurrente: básicos, cambios de talla, vuelta al cole | Con soltura, con prisas y a menudo con una sola mano libre |
+| Abuelas y abuelos | 60-75 años | Regalos puntuales (cumpleaños, Navidad) | Uso básico; les cuesta la letra pequeña y los iconos sin texto |
+| Otras personas que regalan | Tíos, amistades, 20-50 años | Regalo para un bebé o un niño que no ven a diario | Con soltura, pero no conocen la talla del niño |
+
+Rasgos comunes: poco tiempo, compra desde el móvil en momentos sueltos del día y una duda constante con las tallas, porque los niños crecen rápido y cada marca talla distinto.
+
+### 2.2 Personas
+
+#### Persona 1: Laura Gómez, la madre que compra en ratos muertos
+
+- **Edad:** 34 años.
+- **Contexto:** enfermera a turnos en Sevilla. Tiene a Julio (6 años) y a Sergio (18 meses). Compra desde el móvil en el autobús o mientras duerme a la pequeña, casi siempre con una mano.
+- **Objetivos:** reponer rápido lo que se les queda pequeño, acertar con la talla a la primera y recoger en la tienda que tiene al lado de casa.
+- **Frustraciones:** apps que obligan a registrarse antes de pagar, filtros escondidos en menús, y que la talla «2 años» de una marca le quede grande y la de otra, pequeña.
+- **Frase:** «Si en tres toques no he encontrado un pijama, cierro la app».
+
+#### Persona 2: Antonio Ruiz, el abuelo que busca un regalo
+
+- **Edad:** 68 años.
+- **Contexto:** jubilado en Sevilla. Su nieta Lucía cumple 4 años y vive en otra ciudad. Usa WhatsApp y poco más; compra por internet de vez en cuando porque se lo han enseñado sus hijos.
+- **Objetivos:** encontrar un vestido bonito, saber qué talla pedir sin tener que llamar a su hija y que, si no vale, lo puedan cambiar en una tienda.
+- **Frustraciones:** letra pequeña, iconos que no sabe qué significan, formularios que se borran si se equivoca en un campo y el miedo a pagar algo que no quería.
+- **Frase:** «No sé si a los 4 años se pide la talla 4 o la 5».
+
+### 2.3 Análisis de la competencia
+
+Revisión de las apps Android de cuatro marcas que venden moda infantil en España, centrada en el recorrido de compra de ropa de niño.
+
+| App | Qué hace bien | Qué hace mal | Qué me llevo |
+|-----|---------------|--------------|--------------|
+| **Zara** (sección Niños) | Fotos grandes y cuidadas; separa bebé, niña y niño desde el principio; indica la talla con edad y centímetros | Estética tan minimalista que algunos iconos y textos son muy pequeños; los filtros no están a la vista | Entrada por edad en Inicio y talla expresada en edad + altura |
+| **H&M** | Filtros claros por talla, color y precio; carrito accesible desde cualquier pantalla | Muchos avisos y banners promocionales que tapan el contenido; el registro se ofrece con insistencia | Filtros como chips visibles encima del catálogo; comprar como invitado sin interrupciones |
+| **Kiabi** | Precios visibles y promociones claras; opción de recoger en tienda | Pantallas cargadas de promociones que compiten con el producto; jerarquía visual poco clara | Recogida en tienda en el checkout, pero con una jerarquía limpia |
+| **Vertbaudet** | Especializada en infantil: tallas por edad y guía de tallas detallada | La guía de tallas abre una página aparte y hace perder el producto; catálogo muy denso | Guía de tallas dentro del producto como bottom sheet, sin salir de la pantalla |
+
+### 2.4 Insights y hallazgos clave
+
+| # | Insight | Decisión de diseño |
+|---|---------|--------------------|
+| I1 | Dudan mucho con las tallas y cada marca talla distinto | Botón «Guía de tallas» en el detalle que abre un **bottom sheet** con la equivalencia talla → edad → altura. El **SelectorTalla** muestra la edad bajo cada talla y marca las que no tienen stock |
+| I2 | Compran con una mano y con prisas | **Navigation bar** inferior con 3 destinos, botón principal fijo en la parte baja de Detalle, Carrito y Checkout, y todas las áreas táctiles de al menos 48 × 48 dp |
+| I3 | Buscan por edad, no por tipo de prenda | Inicio empieza por las tres categorías de edad (Bebé 0-24 m, Niña, Niño) y el catálogo filtra por edad/talla con **filter chips** siempre visibles |
+| I4 | Muchos compran regalos sin conocer la talla | Casilla «Es un regalo» en el checkout (ticket regalo sin precio) y aviso de cambio gratis en cualquier tienda física |
+| I5 | Tienen miedo a equivocarse y perder lo hecho | **Snackbar «Deshacer»** al eliminar del carrito y errores del formulario con mensaje de ayuda que dice cómo corregirlo, sin borrar lo escrito |
+| I6 | Deciden en varios ratos, no de una vez | **Favoritos** como destino de la navigation bar para guardar prendas y volver después |
