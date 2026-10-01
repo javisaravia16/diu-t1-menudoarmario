@@ -1,5 +1,43 @@
-# Documentación de la interfaz — Menudo armario
-App android de tienda de ropa y calzado infantil (0 a 14 años) **Menudo armario**. Diseño basado en Material Design 3 y pensado para comprar rápido, con una mano y sin miedo a equivocarse de talla.
+# Documentación de la interfaz — Menudo Armario
+
+**Desarrollo de la documentación de una interfaz de una aplicación en Android Studio**
+
+| | |
+|---|---|
+| **Aplicación** | Menudo Armario · app Android de ropa y calzado infantil (0 a 14 años) |
+| **Asignatura** | Diseño de Interfaces de Usuario · Tarea 1 |
+| **Autor** | Francisco Javier Saravia Ogazón ([javisaravia16](https://github.com/javisaravia16)) |
+| **Fecha** | Octubre de 2026 |
+| **Archivo de Figma** | [T1 Menudo armario javier saravia](https://www.figma.com/design/Nrh4iQ6bEis6kerCMDAQs0/T1-Menudo-armario-javier-saravia) |
+
+![Portada: detalle de producto con la guía de tallas](capturas/prototipo/03b-guia-tallas.png)
+
+App Android de tienda de ropa y calzado infantil (0 a 14 años) **Menudo Armario**. Diseño basado en Material Design 3 y pensado para comprar rápido, con una mano y sin miedo a equivocarse de talla.
+
+## Índice de contenidos
+
+1. [Justificación del diseño](#1-justificación-del-diseño)
+   - [1.1 Importancia del diseño centrado en el usuario](#11-importancia-del-diseño-centrado-en-el-usuario)
+   - [1.2 Objetivos y metas del proyecto](#12-objetivos-y-metas-del-proyecto)
+   - [1.3 Beneficios esperados](#13-beneficios-esperados)
+2. [Investigación y análisis de usuarios](#2-investigación-y-análisis-de-usuarios)
+   - [2.1 Datos demográficos y segmentación](#21-datos-demográficos-y-segmentación)
+   - [2.2 Necesidades y comportamientos](#22-necesidades-y-comportamientos)
+   - [2.3 Insights y hallazgos clave](#23-insights-y-hallazgos-clave)
+3. [Diseño de la interfaz](#3-diseño-de-la-interfaz)
+   - [3.1 Mapa de navegación](#31-mapa-de-navegación)
+   - [3.2 Wireframes](#32-wireframes)
+   - [3.3 Guía de estilo Material Design 3](#33-guía-de-estilo-material-design-3)
+   - [3.4 Prototipo de alta fidelidad](#34-prototipo-de-alta-fidelidad)
+4. [Validación y pruebas](#4-validación-y-pruebas)
+   - [4.1 Metodología de pruebas](#41-metodología-de-pruebas)
+   - [4.2 Feedback de usuarios](#42-feedback-de-usuarios)
+   - [4.3 Iteraciones y mejoras](#43-iteraciones-y-mejoras)
+5. [Entrega y documentación final](#5-entrega-y-documentación-final)
+   - [5.1 Compilación del diseño](#51-compilación-del-diseño)
+   - [5.2 Justificación del diseño propuesto](#52-justificación-del-diseño-propuesto)
+   - [5.3 Recomendaciones y pasos a seguir](#53-recomendaciones-y-pasos-a-seguir)
+6. [Referencias bibliográficas](#6-referencias-bibliográficas)
 
 ## 1. Justificación del diseño
 
@@ -7,7 +45,7 @@ App android de tienda de ropa y calzado infantil (0 a 14 años) **Menudo armario
 
 Quien compra ropa infantil casi nunca es quien la va a llevar. Compra una madre con el bebé en brazos, un padre en la cola del médico o un abuelo que no sabe qué talla usa su nieta. Si diseñamos pensando en el catálogo y no en estas personas, la app acaba siendo una web de tienda metida en un móvil: menús profundos, tallas confusas y formularios largos.
 
-Por eso el proyecto sigue un proceso de diseño centrado en el usuario (ISO 9241-210): primero entender quién compra y en qué contexto, después decidir la estructura, prototipar y, por último, comprobar con personas reales si funciona. Cada decisión de la interfaz de este documento se apoya en un insight de la sección 2.4 o en un resultado de las pruebas de la sección 4.
+Por eso el proyecto sigue un proceso de diseño centrado en el usuario (ISO 9241-210): primero entender quién compra y en qué contexto, después decidir la estructura, prototipar y, por último, comprobar con personas reales si funciona. Cada decisión de la interfaz de este documento se apoya en un insight de la sección 2.3 o en un resultado de las pruebas de la sección 4.
 
 ### 1.2 Objetivos y metas del proyecto
 
@@ -44,9 +82,13 @@ La investigación es básica y parte del briefing de la cadena, de la observaci�
 
 Rasgos comunes: poco tiempo, compra desde el móvil en momentos sueltos del día y una duda constante con las tallas, porque los niños crecen rápido y cada marca talla distinto.
 
-### 2.2 Personas
+### 2.2 Necesidades y comportamientos
 
-#### Persona 1: Laura Gómez, la madre que compra en ratos muertos
+Qué esperan los usuarios y cómo usan hoy apps parecidas, a partir de dos personas representativas y del análisis de la competencia.
+
+#### Personas
+
+##### Persona 1: Laura Gómez, la madre que compra en ratos muertos
 
 - **Edad:** 34 años.
 - **Contexto:** enfermera a turnos en Sevilla. Tiene a Julio (6 años) y a Sergio (18 meses). Compra desde el móvil en el autobús o mientras duerme a la pequeña, casi siempre con una mano.
@@ -54,7 +96,7 @@ Rasgos comunes: poco tiempo, compra desde el móvil en momentos sueltos del día
 - **Frustraciones:** apps que obligan a registrarse antes de pagar, filtros escondidos en menús, y que la talla «2 años» de una marca le quede grande y la de otra, pequeña.
 - **Frase:** «Si en tres toques no he encontrado un pijama, cierro la app».
 
-#### Persona 2: Antonio Ruiz, el abuelo que busca un regalo
+##### Persona 2: Antonio Ruiz, el abuelo que busca un regalo
 
 - **Edad:** 68 años.
 - **Contexto:** jubilado en Sevilla. Su nieta Lucía cumple 4 años y vive en otra ciudad. Usa WhatsApp y poco más; compra por internet de vez en cuando porque se lo han enseñado sus hijos.
@@ -62,7 +104,7 @@ Rasgos comunes: poco tiempo, compra desde el móvil en momentos sueltos del día
 - **Frustraciones:** letra pequeña, iconos que no sabe qué significan, formularios que se borran si se equivoca en un campo y el miedo a pagar algo que no quería.
 - **Frase:** «No sé si a los 4 años se pide la talla 4 o la 5».
 
-### 2.3 Análisis de la competencia
+#### Análisis de la competencia: cómo compran hoy
 
 Revisión de las apps Android de cuatro marcas que venden moda infantil en España, centrada en el recorrido de compra de ropa de niño.
 
@@ -73,7 +115,7 @@ Revisión de las apps Android de cuatro marcas que venden moda infantil en Espa�
 | **Kiabi** | Precios visibles y promociones claras; opción de recoger en tienda | Pantallas cargadas de promociones que compiten con el producto; jerarquía visual poco clara | Recogida en tienda en el checkout, pero con una jerarquía limpia |
 | **Vertbaudet** | Especializada en infantil: tallas por edad y guía de tallas detallada | La guía de tallas abre una página aparte y hace perder el producto; catálogo muy denso | Guía de tallas dentro del producto como bottom sheet, sin salir de la pantalla |
 
-### 2.4 Insights y hallazgos clave
+### 2.3 Insights y hallazgos clave
 
 | # | Insight | Decisión de diseño |
 |---|---------|--------------------|
@@ -242,7 +284,7 @@ El Carrito incluye la snackbar «Deshacer» para recuperar un producto eliminado
 
 ## 4. Validación y pruebas
 
-### 4.1 Metodología
+### 4.1 Metodología de pruebas
 
 Plan de pruebas de usabilidad diseñado para validar el prototipo:
 
@@ -258,9 +300,34 @@ Plan de pruebas de usabilidad diseñado para validar el prototipo:
   - Errores: toques en un sitio equivocado o vueltas atrás.
   - Al final, una pregunta de facilidad del 1 (muy difícil) al 7 (muy fácil) por tarea.
 
-### 4.2 Resultados
+### 4.2 Feedback de usuarios
 
-En esta entrega **las pruebas con usuarios no se han realizado todavía**, por lo que no hay resultados que presentar y no se da por cumplido ningún objetivo de medición (O1 y O2). Lo único comprobado hasta ahora es el objetivo O3 en la revisión interna: contraste de color, áreas táctiles y posición de las acciones principales (ver sección 3.3).
+Resultados de cada participante en las tres tareas de la sección 4.1.
+
+**Leyenda.** Éxito: ✔ completa sin ayuda · ◐ completa con ayuda · ✘ no completa. Tiempo en segundos. Errores: toques en un sitio equivocado o vueltas atrás. Facilidad: del 1 (muy difícil) al 7 (muy fácil).
+
+#### Participante 1 (P1)
+
+| Tarea | Éxito | Tiempo (s) | Errores | Facilidad (1-7) | Comentarios y observaciones |
+|-------|:-----:|:----------:|:-------:|:---------------:|-----------------------------|
+| Compra | si |     |80|          1             6     Entró por «Niña» en vez de buscar «pijama». Dudó en el Checkout entre «A   domicilio» y «Recoger en tienda»
+| Regalo |a la mitad |140 | 3 | 4 | no vio el enlace «Guía de tallas» hasta que le dije que buscara junto a las tallas. Con la guía acertó la talla 4. Tocó el corazón y no pasó nada |
+| Corregir | a la mitad| 95 | 2 | 4 | Pulsó en la papelera y no reaccionó, porque no está conectada en el prototipo. El error del código postal lo entendió enseguida: «faltan números»|
+
+#### Participante 2 (P2)
+
+| Tarea | Éxito | Tiempo (s) | Errores | Facilidad (1-7) | Comentarios y observaciones |
+|-------|:-----:|:----------:|:-------:|:---------------:|-----------------------------|
+| T1 · Compra |  | | | | |
+| T2 · Regalo | | | | | |
+| T3 · Corregir | | | | | |
+
+#### Resumen frente a los objetivos
+
+| Objetivo | Meta | Resultado | ¿Se cumple? |
+|----------|------|-----------|:-----------:|
+| O1 · Comprar rápido | Menos de 2 min y al menos el 80 % sin ayuda | | |
+| O2 · Acertar con la talla | 100 % de aciertos y menos de 30 s en la guía | | |
 
 ### 4.3 Iteraciones y mejoras
 
@@ -273,7 +340,51 @@ Al no haber pruebas, no hay una iteración basada en datos de usuarios. La revis
 
 ## 5. Entrega y documentación final
 
-### 5.1 Justificación del diseño propuesto
+### 5.1 Compilación del diseño
+
+Todos los elementos del diseño reunidos en un solo sitio, en el orden en que se usarían para desarrollar la app.
+
+#### Recolección de elementos
+
+| Elemento | Qué incluye | Dónde está |
+|----------|-------------|------------|
+| Wireframes | 7 pantallas en baja fidelidad | [3.2 Wireframes](#32-wireframes) · `capturas/wireframes/` |
+| Prototipo | 7 pantallas navegables, guía de tallas como superposición y 2 pantallas en modo oscuro | [3.4 Prototipo](#34-prototipo-de-alta-fidelidad) · [archivo de Figma](https://www.figma.com/design/Nrh4iQ6bEis6kerCMDAQs0/T1-Menudo-armario-javier-saravia) |
+| Assets gráficos | Iconos del kit Material 3 y capturas exportadas en PNG | Archivo de Figma · `capturas/prototipo/` |
+| Guía de estilo | Esquema de color claro y oscuro, tipografía, rejilla, espaciado y componentes | [3.3 Guía de estilo](#33-guía-de-estilo-material-design-3) · `diseno/estilos.json` |
+
+#### Organización y estructuración
+
+- **Jerarquía de pantallas:** Inicio → Catálogo → Detalle (con guía de tallas) → Carrito → Checkout → Confirmación, más Favoritos como destino directo. El orden completo está en el [mapa de navegación](#31-mapa-de-navegación).
+- **Componentes reutilizables:** `TarjetaProducto` (normal, favorito, agotado) y `SelectorTalla` (disponible, seleccionada, sin stock), junto con top app bar, navigation bar, filter chips, botones, text fields, snackbar y bottom sheet del kit Material 3.
+- **Interacciones y transiciones:** recogidas en la tabla de interacciones de la sección [3.4](#34-prototipo-de-alta-fidelidad). Navegación con Smart Animate y la guía de tallas como superposición anclada abajo.
+
+#### Documentación detallada
+
+- **Funcionalidad de componentes:** cada componente propio y sus variantes se describe en el apartado «Componentes» de la sección 3.3.
+- **Especificaciones técnicas:**
+  - Pantallas de 360 × 800 dp (Android compacto), rejilla de 4 columnas con márgenes de 16 dp y medianiles de 8 dp, y espaciado en múltiplos de 8 dp.
+  - Áreas táctiles de al menos 48 × 48 dp.
+  - Tipografía Roboto con la escala de Material 3.
+  - Colores exactos del esquema claro y oscuro generados desde el color semilla `#E0694E`, todos en `diseno/estilos.json`, listos para trasladar a un tema de Jetpack Compose.
+- **Notas y comentarios:** cada decisión de diseño se relaciona con un insight (I1–I6) de la sección 2.3, y la justificación completa está en el apartado 5.2.
+
+#### Formatos de entrega
+
+| Formato | Para qué sirve |
+|---------|----------------|
+| Archivo de Figma (`.fig`, editable) | Modificar el diseño. Está compartido con la docente con permiso de edición. |
+| Prototipo de Figma (modo presentación) | Ver y probar el diseño sin instalar nada |
+| PNG a 2x (720 × 1600 px) | Capturas de cada pantalla, listas para documentación o desarrollo |
+| `diseno/estilos.json` | Tokens de color, tipografía y espaciado para el equipo de desarrollo |
+| Este repositorio (Markdown) | Documentación completa y versionada con Git |
+
+#### Revisión y validación
+
+- **Feedback de stakeholders:** el archivo de Figma está compartido con la docente con permiso de edición para que pueda revisarlo y comentarlo. Las pruebas con usuarios siguen pendientes (ver sección 4).
+- **Iteraciones:** los ajustes pendientes detectados en la revisión interna están en el apartado 4.3. La evolución del diseño queda registrada en el historial de versiones de Figma y en los commits de este repositorio.
+
+### 5.2 Justificación del diseño propuesto
 
 La propuesta de Menudo Armario sale de un problema concreto: gente con poco tiempo que compra desde el móvil con una mano y que duda con las tallas. Las decisiones principales responden a eso:
 
@@ -286,7 +397,7 @@ La propuesta de Menudo Armario sale de un problema concreto: gente con poco tiem
 
 Estas decisiones se apoyan en el análisis de usuarios y de la competencia de la sección 2, pero todavía no se han contrastado con pruebas de usabilidad reales, que son el siguiente paso.
 
-### 5.2 Recomendaciones y pasos a seguir
+### 5.3 Recomendaciones y pasos a seguir
 
 1. **Probar con usuarios**, empezando por el plan de la sección 4.1 y ampliando después al público real: al menos cinco madres o padres y dos o tres personas mayores de 60 años, que es donde más riesgo hay de letra pequeña y de iconos confusos.
 2. **Ampliar la guía de tallas** con la opción de introducir la altura del niño y que la app recomiende la talla, y guardar los perfiles de los niños (nombre, fecha de nacimiento y altura) para no repetirlo en cada compra.
