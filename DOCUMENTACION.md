@@ -14,47 +14,46 @@
 
 App Android de tienda de ropa y calzado infantil (0 a 14 años) **Menudo Armario**. Diseño basado en Material Design 3 y pensado para comprar rápido, con una mano y sin miedo a equivocarse de talla.
 
-## Índice de contenidos
+## Índice de Contenidos
 
-1. [Justificación del diseño](#1-justificación-del-diseño)
-   - [1.1 Importancia del diseño centrado en el usuario](#11-importancia-del-diseño-centrado-en-el-usuario)
-   - [1.2 Objetivos y metas del proyecto](#12-objetivos-y-metas-del-proyecto)
-   - [1.3 Beneficios esperados](#13-beneficios-esperados)
-2. [Investigación y análisis de usuarios](#2-investigación-y-análisis-de-usuarios)
-   - [2.1 Datos demográficos y segmentación](#21-datos-demográficos-y-segmentación)
-   - [2.2 Necesidades y comportamientos](#22-necesidades-y-comportamientos)
-   - [2.3 Insights y hallazgos clave](#23-insights-y-hallazgos-clave)
-3. [Diseño de la interfaz](#3-diseño-de-la-interfaz)
-   - [3.1 Mapa de navegación](#31-mapa-de-navegación)
-   - [3.2 Wireframes](#32-wireframes)
-   - [3.3 Guía de estilo Material Design 3](#33-guía-de-estilo-material-design-3)
-   - [3.4 Prototipo de alta fidelidad](#34-prototipo-de-alta-fidelidad)
-4. [Validación y pruebas](#4-validación-y-pruebas)
-   - [4.1 Metodología de pruebas](#41-metodología-de-pruebas)
-   - [4.2 Feedback de usuarios](#42-feedback-de-usuarios)
-   - [4.3 Iteraciones y mejoras](#43-iteraciones-y-mejoras)
-5. [Entrega y documentación final](#5-entrega-y-documentación-final)
-   - [5.1 Compilación del diseño](#51-compilación-del-diseño)
-   - [5.2 Justificación del diseño propuesto](#52-justificación-del-diseño-propuesto)
-   - [5.3 Recomendaciones y pasos a seguir](#53-recomendaciones-y-pasos-a-seguir)
-6. [Referencias bibliográficas](#6-referencias-bibliográficas)
+1. [Justificación del Diseño](#1-justificación-del-diseño)
+   - [1.1 Importancia del Diseño Centrado en el Usuario](#11-importancia-del-diseño-centrado-en-el-usuario)
+   - [1.2 Objetivos y Metas del Proyecto](#12-objetivos-y-metas-del-proyecto)
+   - [1.3 Beneficios Esperados](#13-beneficios-esperados)
+2. [Investigación y Análisis de Usuarios](#2-investigación-y-análisis-de-usuarios)
+   - [2.1 Datos Demográficos y Segmentación](#21-datos-demográficos-y-segmentación)
+   - [2.2 Necesidades y Comportamientos](#22-necesidades-y-comportamientos)
+   - [2.3 Insights y Hallazgos Clave](#23-insights-y-hallazgos-clave)
+3. [Diseño de la Interfaz](#3-diseño-de-la-interfaz)
+   - [3.1 Wireframes](#31-wireframes)
+   - [3.2 Prototipos](#32-prototipos)
+   - [3.3 Guías de Estilo](#33-guías-de-estilo)
+4. [Validación y Pruebas](#4-validación-y-pruebas)
+   - [4.1 Metodologías de Pruebas](#41-metodologías-de-pruebas)
+   - [4.2 Feedback de Usuarios](#42-feedback-de-usuarios)
+   - [4.3 Iteraciones y Mejoras](#43-iteraciones-y-mejoras)
+5. [Entrega y Documentación Final](#5-entrega-y-documentación-final)
+   - [5.1 Compilación del Diseño](#51-compilación-del-diseño)
+   - [5.2 Justificación del Diseño Propuesto](#52-justificación-del-diseño-propuesto)
+   - [5.3 Recomendaciones y Pasos a Seguir](#53-recomendaciones-y-pasos-a-seguir)
+6. [Referencias Bibliográficas](#6-referencias-bibliográficas)
 
-## 1. Justificación del diseño
+## 1. Justificación del Diseño
 
-### 1.1 Importancia del diseño centrado en el usuario
+### 1.1 Importancia del Diseño Centrado en el Usuario
 
 Quien compra ropa infantil casi nunca es quien la va a llevar. Compra una madre con el bebé en brazos, un padre en la cola del médico o un abuelo que no sabe qué talla usa su nieta. Si diseñamos pensando en el catálogo y no en estas personas, la app acaba siendo una web de tienda metida en un móvil: menús profundos, tallas confusas y formularios largos.
 
 Por eso el proyecto sigue un proceso de diseño centrado en el usuario (ISO 9241-210): primero entender quién compra y en qué contexto, después decidir la estructura, prototipar y, por último, comprobar con personas reales si funciona. Cada decisión de la interfaz de este documento se apoya en un insight de la sección 2.3 o en un resultado de las pruebas de la sección 4.
 
-### 1.2 Objetivos y metas del proyecto
+### 1.2 Objetivos y Metas del Proyecto
 
 | # | Objetivo | Cómo se mide | Meta |
 | O1 | Comprar rápido | Tiempo desde Inicio hasta Confirmación en la tarea de compra | Menos de 2 minutos y al menos el 80 % de participantes lo consigue sin ayuda |
 | O2 | Acertar con la talla | Participantes que eligen la talla correcta en la tarea de regalo usando la guía de tallas | 100 % de aciertos y menos de 30 s en la guía |
 | O3 | Usable con una mano y accesible | Revisión de las 7 pantallas: áreas táctiles, posición de las acciones principales y contraste | 100 % de áreas táctiles ≥ 48 × 48 dp, acción principal siempre en la mitad inferior y todas las parejas de color ≥ 4,5:1 |
 
-### 1.3 Beneficios esperados
+### 1.3 Beneficios Esperados
 
 Para quien compra
 - Encuentra lo que busca en menos pasos gracias a la entrada por edad (Bebé, Niña, Niño).
@@ -68,9 +67,9 @@ Para el negocio
 - Más visitas a tienda física con la opción de recogida y cambio en tienda.
 - Una base de diseño (tokens y componentes M3) reutilizable para futuras funciones y para una versión web
 
-## 2. Investigación y análisis de usuarios
+## 2. Investigación y Análisis de Usuarios
 
-### 2.1 Datos demográficos y segmentación
+### 2.1 Datos Demográficos y Segmentación
 
 La investigación es básica y parte del briefing de la cadena, de la observación de apps de la competencia y de conversaciones informales con familiares y compañeros. No son datos estadísticos, sino hipótesis de trabajo que se contrastan en las pruebas de la sección 4.
 
@@ -82,7 +81,7 @@ La investigación es básica y parte del briefing de la cadena, de la observaci�
 
 Rasgos comunes: poco tiempo, compra desde el móvil en momentos sueltos del día y una duda constante con las tallas, porque los niños crecen rápido y cada marca talla distinto.
 
-### 2.2 Necesidades y comportamientos
+### 2.2 Necesidades y Comportamientos
 
 Qué esperan los usuarios y cómo usan hoy apps parecidas, a partir de dos personas representativas y del análisis de la competencia.
 
@@ -115,7 +114,7 @@ Revisión de las apps Android de cuatro marcas que venden moda infantil en Espa�
 | **Kiabi** | Precios visibles y promociones claras; opción de recoger en tienda | Pantallas cargadas de promociones que compiten con el producto; jerarquía visual poco clara | Recogida en tienda en el checkout, pero con una jerarquía limpia |
 | **Vertbaudet** | Especializada en infantil: tallas por edad y guía de tallas detallada | La guía de tallas abre una página aparte y hace perder el producto; catálogo muy denso | Guía de tallas dentro del producto como bottom sheet, sin salir de la pantalla |
 
-### 2.3 Insights y hallazgos clave
+### 2.3 Insights y Hallazgos Clave
 
 | # | Insight | Decisión de diseño |
 |---|---------|--------------------|
@@ -126,9 +125,23 @@ Revisión de las apps Android de cuatro marcas que venden moda infantil en Espa�
 | I5 | Tienen miedo a equivocarse y perder lo hecho | **Snackbar «Deshacer»** al eliminar del carrito y errores del formulario con mensaje de ayuda que dice cómo corregirlo, sin borrar lo escrito |
 | I6 | Deciden en varios ratos, no de una vez | **Favoritos** como destino de la navigation bar para guardar prendas y volver después |
 
-## 3. Diseño de la interfaz
+## 3. Diseño de la Interfaz
 
-### 3.1 Mapa de navegación
+### 3.1 Wireframes
+
+Siete wireframes de baja fidelidad en escala de grises, frame Android Compact de 360 × 800, en la página «Wireframes» de Figma.
+
+| Pantalla | Wireframe | Qué resuelve |
+|----------|-----------|--------------|
+| 1. Inicio | ![Wireframe Inicio](capturas/wireframes/01-inicio.png) | Buscador arriba, tres categorías por edad como primer bloque y novedades en carrusel horizontal |
+| 2. Catálogo | ![Wireframe Catálogo](capturas/wireframes/02-catalogo.png) | Chips de edad/talla, color y precio fijos bajo la top app bar; cuadrícula de 2 columnas y botón de ordenar |
+| 3. Detalle | ![Wireframe Detalle](capturas/wireframes/03-detalle.png) | Carrusel de fotos, precio, selector de talla con enlace a la guía y botón «Añadir al carrito» fijo abajo |
+| 4. Carrito | ![Wireframe Carrito](capturas/wireframes/04-carrito.png) | Líneas con cantidad (− / +) y papelera, resumen del importe y botón «Tramitar pedido» abajo |
+| 5. Checkout | ![Wireframe Checkout](capturas/wireframes/05-checkout.png) | Una sola pantalla: entrega (domicilio o tienda), datos, casilla de regalo y pago |
+| 6. Confirmación | ![Wireframe Confirmación](capturas/wireframes/06-confirmacion.png) | Mensaje claro, número de pedido y botón para volver al inicio |
+| 7. Favoritos | ![Wireframe Favoritos](capturas/wireframes/07-favoritos.png) | Cuadrícula de prendas guardadas y pie con la palabra del día |
+
+#### Mapa de navegación
 
 ```mermaid
 flowchart TD
@@ -163,21 +176,47 @@ flowchart TD
 
 La app tiene dos niveles: los tres destinos principales de la navigation bar y las pantallas de detalle del flujo de compra. Catálogo no está en la navigation bar porque se llega siempre desde una categoría o una búsqueda de Inicio, que es como compran nuestras personas (I3).
 
-### 3.2 Wireframes
+### 3.2 Prototipos
 
-Siete wireframes de baja fidelidad en escala de grises, frame Android Compact de 360 × 800, en la página «Wireframes» de Figma (versión «Reto 2 – wireframes»).
+- **Archivo de Figma:** [T1 Menudo armario javier saravia](https://www.figma.com/design/Nrh4iQ6bEis6kerCMDAQs0/T1-Menudo-armario-javier-saravia)
+- **Versión con nombre:** «Reto 4 – alta fidelidad».
 
-| Pantalla | Wireframe | Qué resuelve |
-|----------|-----------|--------------|
-| 1. Inicio | ![Wireframe Inicio](capturas/wireframes/01-inicio.png) | Buscador arriba, tres categorías por edad como primer bloque y novedades en carrusel horizontal |
-| 2. Catálogo | ![Wireframe Catálogo](capturas/wireframes/02-catalogo.png) | Chips de edad/talla, color y precio fijos bajo la top app bar; cuadrícula de 2 columnas y botón de ordenar |
-| 3. Detalle | ![Wireframe Detalle](capturas/wireframes/03-detalle.png) | Carrusel de fotos, precio, selector de talla con enlace a la guía y botón «Añadir al carrito» fijo abajo |
-| 4. Carrito | ![Wireframe Carrito](capturas/wireframes/04-carrito.png) | Líneas con cantidad (− / +) y papelera, resumen del importe y botón «Tramitar pedido» abajo |
-| 5. Checkout | ![Wireframe Checkout](capturas/wireframes/05-checkout.png) | Una sola pantalla: entrega (domicilio o tienda), datos, casilla de regalo y pago |
-| 6. Confirmación | ![Wireframe Confirmación](capturas/wireframes/06-confirmacion.png) | Mensaje claro, número de pedido y botón para volver al inicio |
-| 7. Favoritos | ![Wireframe Favoritos](capturas/wireframes/07-favoritos.png) | Cuadrícula de prendas guardadas y pie con la palabra del día |
+#### Flujo conectado
 
-### 3.3 Guía de estilo Material Design 3
+Inicio → Catálogo → Detalle → Carrito → Checkout → Confirmación → Inicio. Desde el Detalle se abre la guía de tallas como superposición sin salir de la pantalla. La navigation bar navega entre Inicio, Carrito y Favoritos desde las pantallas principales. El flujo arranca en Inicio.
+
+#### Interacciones
+
+| Disparador | Acción | Animación |
+|------------|--------|-----------|
+| Tocar una categoría en Inicio | Navegar a Catálogo | Smart Animate |
+| Tocar una tarjeta de producto | Navegar a Detalle | Smart Animate |
+| Tocar «Guía de tallas» | Abrir superposición (bottom sheet con fondo oscurecido) | Desde abajo |
+| Tocar fuera del bottom sheet | Cerrar superposición | Smart Animate |
+| Tocar «Añadir al carrito» | Navegar a Carrito | Smart Animate |
+| Tocar «Confirmar y pagar» | Navegar a Confirmación | Smart Animate |
+| Tocar la flecha de volver | Volver a la pantalla anterior | Smart Animate |
+| Tocar un destino de la navigation bar | Navegar a Inicio, Carrito o Favoritos | Smart Animate |
+
+El Carrito incluye la snackbar «Deshacer» para recuperar un producto eliminado, y el Checkout muestra un campo en estado de error con icono y texto que explica cómo corregirlo.
+
+#### Pantallas
+
+| | | |
+|---|---|---|
+| ![Inicio](capturas/prototipo/01-inicio.png) | ![Catálogo](capturas/prototipo/02-catalogo.png) | ![Detalle](capturas/prototipo/03-detalle.png) |
+| ![Guía de tallas](capturas/prototipo/03b-guia-tallas.png) | ![Carrito](capturas/prototipo/04-carrito.png) | ![Checkout con error](capturas/prototipo/05-checkout.png) |
+| ![Confirmación](capturas/prototipo/06-confirmacion.png) | ![Favoritos](capturas/prototipo/07-favoritos.png) | |
+
+**Modo oscuro** (esquema oscuro de Material Theme Builder, aplicado con el modo Dark de la colección de variables «M3»):
+
+| | |
+|---|---|
+| ![Inicio oscuro](capturas/prototipo/01-inicio-oscuro.png) | ![Detalle oscuro](capturas/prototipo/03-detalle-oscuro.png) |
+
+### 3.3 Guías de Estilo
+
+La guía de estilo sigue Material Design 3.
 
 Los tokens completos están en [`diseno/estilos.json`](diseno/estilos.json).
 
@@ -242,49 +281,9 @@ Las etiquetas de la navigation bar usan labelMedium (12 / 16, peso 500), como in
 - Iconos de la navigation bar siempre con etiqueta de texto.
 - Los errores del formulario explican cómo corregirlos (p. ej., «El código postal tiene 5 números»).
 
+## 4. Validación y Pruebas
 
-
-### 3.4 Prototipo de alta fidelidad
-
-- **Archivo de Figma:** [T1 Menudo armario javier saravia](https://www.figma.com/design/Nrh4iQ6bEis6kerCMDAQs0/T1-Menudo-armario-javier-saravia)
-- **Versión con nombre:** «Reto 4 – alta fidelidad».
-
-#### Flujo conectado
-
-Inicio → Catálogo → Detalle → Carrito → Checkout → Confirmación → Inicio. Desde el Detalle se abre la guía de tallas como superposición sin salir de la pantalla. La navigation bar navega entre Inicio, Carrito y Favoritos desde las pantallas principales. El flujo arranca en Inicio.
-
-#### Interacciones
-
-| Disparador | Acción | Animación |
-|------------|--------|-----------|
-| Tocar una categoría en Inicio | Navegar a Catálogo | Smart Animate |
-| Tocar una tarjeta de producto | Navegar a Detalle | Smart Animate |
-| Tocar «Guía de tallas» | Abrir superposición (bottom sheet con fondo oscurecido) | Desde abajo |
-| Tocar fuera del bottom sheet | Cerrar superposición | Smart Animate |
-| Tocar «Añadir al carrito» | Navegar a Carrito | Smart Animate |
-| Tocar «Confirmar y pagar» | Navegar a Confirmación | Smart Animate |
-| Tocar la flecha de volver | Volver a la pantalla anterior | Smart Animate |
-| Tocar un destino de la navigation bar | Navegar a Inicio, Carrito o Favoritos | Smart Animate |
-
-El Carrito incluye la snackbar «Deshacer» para recuperar un producto eliminado, y el Checkout muestra un campo en estado de error con icono y texto que explica cómo corregirlo.
-
-#### Pantallas
-
-| | | |
-|---|---|---|
-| ![Inicio](capturas/prototipo/01-inicio.png) | ![Catálogo](capturas/prototipo/02-catalogo.png) | ![Detalle](capturas/prototipo/03-detalle.png) |
-| ![Guía de tallas](capturas/prototipo/03b-guia-tallas.png) | ![Carrito](capturas/prototipo/04-carrito.png) | ![Checkout con error](capturas/prototipo/05-checkout.png) |
-| ![Confirmación](capturas/prototipo/06-confirmacion.png) | ![Favoritos](capturas/prototipo/07-favoritos.png) | |
-
-**Modo oscuro** (esquema oscuro de Material Theme Builder, aplicado con el modo Dark de la colección de variables «M3»):
-
-| | |
-|---|---|
-| ![Inicio oscuro](capturas/prototipo/01-inicio-oscuro.png) | ![Detalle oscuro](capturas/prototipo/03-detalle-oscuro.png) |
-
-## 4. Validación y pruebas
-
-### 4.1 Metodología de pruebas
+### 4.1 Metodologías de Pruebas
 
 Plan de pruebas de usabilidad diseñado para validar el prototipo:
 
@@ -300,7 +299,7 @@ Plan de pruebas de usabilidad diseñado para validar el prototipo:
   - Errores: toques en un sitio equivocado o vueltas atrás.
   - Al final, una pregunta de facilidad del 1 (muy difícil) al 7 (muy fácil) por tarea.
 
-### 4.2 Feedback de usuarios
+### 4.2 Feedback de Usuarios
 
 Resultados de cada participante en las tres tareas de la sección 4.1.
 
@@ -310,9 +309,9 @@ Resultados de cada participante en las tres tareas de la sección 4.1.
 
 | Tarea | Éxito | Tiempo (s) | Errores | Facilidad (1-7) | Comentarios y observaciones |
 |-------|:-----:|:----------:|:-------:|:---------------:|-----------------------------|
-| Compra | si |     |80|          1             6     Entró por «Niña» en vez de buscar «pijama». Dudó en el Checkout entre «A   domicilio» y «Recoger en tienda»
-| Regalo |a la mitad |140 | 3 | 4 | no vio el enlace «Guía de tallas» hasta que le dije que buscara junto a las tallas. Con la guía acertó la talla 4. Tocó el corazón y no pasó nada |
-| Corregir | a la mitad| 95 | 2 | 4 | Pulsó en la papelera y no reaccionó, porque no está conectada en el prototipo. El error del código postal lo entendió enseguida: «faltan números»|
+| T1 · Compra | ✔ | 80 | 1 | 6 | Entró por «Niña» en vez de buscar «pijama». Dudó en el Checkout entre «A domicilio» y «Recoger en tienda». |
+| T2 · Regalo | ◐ | 140 | 3 | 4 | No vio el enlace «Guía de tallas» hasta que le dije que buscara junto a las tallas. Con la guía acertó la talla 4. Tocó el corazón y no pasó nada. |
+| T3 · Corregir | ◐ | 95 | 2 | 4 | Pulsó en la papelera y no reaccionó, porque no está conectada en el prototipo. El error del código postal lo entendió enseguida: «faltan números». |
 
 #### Participante 2 (P2)
 
@@ -329,7 +328,7 @@ Resultados de cada participante en las tres tareas de la sección 4.1.
 | O1 · Comprar rápido | Menos de 2 min y al menos el 80 % sin ayuda | | |
 | O2 · Acertar con la talla | 100 % de aciertos y menos de 30 s en la guía | | |
 
-### 4.3 Iteraciones y mejoras
+### 4.3 Iteraciones y Mejoras
 
 Al no haber pruebas, no hay una iteración basada en datos de usuarios. La revisión interna del prototipo sí ha detectado estos puntos pendientes, que se abordarían en la siguiente versión:
 
@@ -338,53 +337,53 @@ Al no haber pruebas, no hay una iteración basada en datos de usuarios. La revis
 - Las pantallas en modo oscuro enlazan con las pantallas claras.
 - Seleccionar talla, marcar un favorito y eliminar con «Deshacer» se muestran en las pantallas, pero no están conectados como interacciones en el prototipo.
 
-## 5. Entrega y documentación final
+## 5. Entrega y Documentación Final
 
-### 5.1 Compilación del diseño
+### 5.1 Compilación del Diseño
 
 Todos los elementos del diseño reunidos en un solo sitio, en el orden en que se usarían para desarrollar la app.
 
-#### Recolección de elementos
+#### Recolección de Elementos
 
 | Elemento | Qué incluye | Dónde está |
 |----------|-------------|------------|
-| Wireframes | 7 pantallas en baja fidelidad | [3.2 Wireframes](#32-wireframes) · `capturas/wireframes/` |
-| Prototipo | 7 pantallas navegables, guía de tallas como superposición y 2 pantallas en modo oscuro | [3.4 Prototipo](#34-prototipo-de-alta-fidelidad) · [archivo de Figma](https://www.figma.com/design/Nrh4iQ6bEis6kerCMDAQs0/T1-Menudo-armario-javier-saravia) |
-| Assets gráficos | Iconos del kit Material 3 y capturas exportadas en PNG | Archivo de Figma · `capturas/prototipo/` |
-| Guía de estilo | Esquema de color claro y oscuro, tipografía, rejilla, espaciado y componentes | [3.3 Guía de estilo](#33-guía-de-estilo-material-design-3) · `diseno/estilos.json` |
+| Wireframes | 7 pantallas en baja fidelidad | [3.1 Wireframes](#31-wireframes) · `capturas/wireframes/` |
+| Prototipos | 7 pantallas navegables, guía de tallas como superposición y 2 pantallas en modo oscuro | [3.2 Prototipos](#32-prototipos) · [archivo de Figma](https://www.figma.com/design/Nrh4iQ6bEis6kerCMDAQs0/T1-Menudo-armario-javier-saravia) |
+| Assets Gráficos | Iconos del kit Material 3 y capturas exportadas en PNG | Archivo de Figma · `capturas/prototipo/` |
+| Guías de Estilo | Esquema de color claro y oscuro, tipografía, rejilla, espaciado y componentes | [3.3 Guías de Estilo](#33-guías-de-estilo) · `diseno/estilos.json` |
 
-#### Organización y estructuración
+#### Organización y Estructuración
 
-- **Jerarquía de pantallas:** Inicio → Catálogo → Detalle (con guía de tallas) → Carrito → Checkout → Confirmación, más Favoritos como destino directo. El orden completo está en el [mapa de navegación](#31-mapa-de-navegación).
-- **Componentes reutilizables:** `TarjetaProducto` (normal, favorito, agotado) y `SelectorTalla` (disponible, seleccionada, sin stock), junto con top app bar, navigation bar, filter chips, botones, text fields, snackbar y bottom sheet del kit Material 3.
-- **Interacciones y transiciones:** recogidas en la tabla de interacciones de la sección [3.4](#34-prototipo-de-alta-fidelidad). Navegación con Smart Animate y la guía de tallas como superposición anclada abajo.
+- **Jerarquía de Pantallas:** Inicio → Catálogo → Detalle (con guía de tallas) → Carrito → Checkout → Confirmación, más Favoritos como destino directo. El orden completo está en el [mapa de navegación](#mapa-de-navegación).
+- **Componentes Reutilizables:** `TarjetaProducto` (normal, favorito, agotado) y `SelectorTalla` (disponible, seleccionada, sin stock), junto con top app bar, navigation bar, filter chips, botones, text fields, snackbar y bottom sheet del kit Material 3.
+- **Interacciones y Transiciones:** recogidas en la tabla de interacciones de la sección [3.2](#32-prototipos). Navegación con Smart Animate y la guía de tallas como superposición anclada abajo.
 
-#### Documentación detallada
+#### Documentación Detallada
 
-- **Funcionalidad de componentes:** cada componente propio y sus variantes se describe en el apartado «Componentes» de la sección 3.3.
-- **Especificaciones técnicas:**
+- **Funcionalidad de Componentes:** cada componente propio y sus variantes se describe en el apartado «Componentes» de la sección 3.3 (Guías de Estilo).
+- **Especificaciones Técnicas:**
   - Pantallas de 360 × 800 dp (Android compacto), rejilla de 4 columnas con márgenes de 16 dp y medianiles de 8 dp, y espaciado en múltiplos de 8 dp.
   - Áreas táctiles de al menos 48 × 48 dp.
   - Tipografía Roboto con la escala de Material 3.
   - Colores exactos del esquema claro y oscuro generados desde el color semilla `#E0694E`, todos en `diseno/estilos.json`, listos para trasladar a un tema de Jetpack Compose.
-- **Notas y comentarios:** cada decisión de diseño se relaciona con un insight (I1–I6) de la sección 2.3, y la justificación completa está en el apartado 5.2.
+- **Notas y Comentarios:** cada decisión de diseño se relaciona con un insight (I1–I6) de la sección 2.3, y la justificación completa está en el apartado 5.2.
 
-#### Formatos de entrega
+#### Formatos de Entrega
 
 | Formato | Para qué sirve |
 |---------|----------------|
-| Archivo de Figma (`.fig`, editable) | Modificar el diseño. Está compartido con la docente con permiso de edición. |
-| Prototipo de Figma (modo presentación) | Ver y probar el diseño sin instalar nada |
-| PNG a 2x (720 × 1600 px) | Capturas de cada pantalla, listas para documentación o desarrollo |
-| `diseno/estilos.json` | Tokens de color, tipografía y espaciado para el equipo de desarrollo |
-| Este repositorio (Markdown) | Documentación completa y versionada con Git |
+| Archivos Editables: archivo de Figma | Modificar el diseño en el futuro. Está compartido con la docente con permiso de edición. |
+| Vistas Previsualizables: prototipo de Figma (modo presentación) | Ver y probar el diseño sin instalar nada ni abrir el editor |
+| Assets Exportados: capturas en PNG | Capturas de cada pantalla, listas para documentación o desarrollo |
+| Assets Exportados: `diseno/estilos.json` | Tokens de color, tipografía y espaciado para el equipo de desarrollo |
+| Documentación: este repositorio (Markdown) | Documentación completa y versionada con Git |
 
-#### Revisión y validación
+#### Revisión y Validación
 
-- **Feedback de stakeholders:** el archivo de Figma está compartido con la docente con permiso de edición para que pueda revisarlo y comentarlo. Las pruebas con usuarios siguen pendientes (ver sección 4).
+- **Feedback de Stakeholders:** el archivo de Figma está compartido con la docente con permiso de edición para que pueda revisarlo y comentarlo. Las pruebas con usuarios siguen pendientes (ver sección 4).
 - **Iteraciones:** los ajustes pendientes detectados en la revisión interna están en el apartado 4.3. La evolución del diseño queda registrada en el historial de versiones de Figma y en los commits de este repositorio.
 
-### 5.2 Justificación del diseño propuesto
+### 5.2 Justificación del Diseño Propuesto
 
 La propuesta de Menudo Armario sale de un problema concreto: gente con poco tiempo que compra desde el móvil con una mano y que duda con las tallas. Las decisiones principales responden a eso:
 
@@ -397,7 +396,7 @@ La propuesta de Menudo Armario sale de un problema concreto: gente con poco tiem
 
 Estas decisiones se apoyan en el análisis de usuarios y de la competencia de la sección 2, pero todavía no se han contrastado con pruebas de usabilidad reales, que son el siguiente paso.
 
-### 5.3 Recomendaciones y pasos a seguir
+### 5.3 Recomendaciones y Pasos a Seguir
 
 1. **Probar con usuarios**, empezando por el plan de la sección 4.1 y ampliando después al público real: al menos cinco madres o padres y dos o tres personas mayores de 60 años, que es donde más riesgo hay de letra pequeña y de iconos confusos.
 2. **Ampliar la guía de tallas** con la opción de introducir la altura del niño y que la app recomiende la talla, y guardar los perfiles de los niños (nombre, fecha de nacimiento y altura) para no repetirlo en cada compra.
@@ -405,7 +404,7 @@ Estas decisiones se apoyan en el análisis de usuarios y de la competencia de la
 4. **Revisar la accesibilidad en el móvil real**: tamaño de fuente del sistema al 200 %, TalkBack y modo oscuro.
 5. **Medir tras el lanzamiento** los mismos indicadores de los objetivos (tiempo de compra, pedidos terminados y devoluciones por talla) para decidir las siguientes iteraciones.
 
-## 6. Referencias bibliográficas
+## 6. Referencias Bibliográficas
 
 Cooper, A., Reimann, R., Cronin, D., & Noessel, C. (2014). *About face: The essentials of interaction design* (4.ª ed.). Wiley.
 
